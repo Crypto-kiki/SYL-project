@@ -1,0 +1,43 @@
+body {
+  box-sizing: border-box;
+  background-color: #edf3f9;
+
+  header {
+    padding: 48px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu {
+      li {
+        display: inline;
+        margin: 0 20px;
+        position: relative;
+
+        span {
+          font-size: 8px;
+          position: absolute;
+          bottom: 20px;
+          right: 4px;
+        }
+      }
+    }
+
+    .button-group {
+      display: flex;
+
+      .lang {
+        list-style: none;
+        text-align: center;
+
+        li {
+          display: none;
+        }
+      }
+
+      button {
+        margin: 0 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+body {
+  box-sizing: border-box;
+  background-color: #edf3f9;
+}
+body header {
+  padding: 48px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .menu li {
+  display: inline;
+  margin: 0 20px;
+  position: relative;
+}
+body header .menu li span {
+  font-size: 8px;
+  position: absolute;
+  bottom: 20px;
+  right: 4px;
+}
+body header .button-group {
+  display: flex;
+}
+body header .button-group .lang {
+  list-style: none;
+  text-align: center;
+}
+body header .button-group .lang li {
+  display: none;
+}
+body header .button-group button {
+  margin: 0 12px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -3,6 +3,8 @@ body {
   background-color: #e4effa;
   color: #797979;
   margin: 48px 24px;
+  padding: 0 48px;
+  min-width: 1340px;
 }
 body header {
   display: flex;
@@ -116,6 +118,7 @@ body main .syl-info .info-cards {
   padding: 8px 12px;
   border-radius: 12px;
   font-weight: bold;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 body main .syl-info .info-cards .info-cards-name {
   font-size: 12px;
@@ -126,6 +129,188 @@ body main .syl-info .info-cards .info-cards-value {
 }
 body main .syl-info .info-cards .info-cards-value .info-img {
   margin-left: 4px;
+}
+body main .main-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0;
+}
+body main .main-body .main-img {
+  color: black;
+}
+body main .main-body .main-img h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+body main .main-body .main-img h2 span {
+  color: red;
+  font-weight: 600;
+  padding: 0 4px;
+}
+body main .main-body .main-img img {
+  margin: 0 0 36px -48px;
+}
+body main .main-body .main-img p {
+  color: #797979;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+body main .main-body .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 410px;
+  width: 310px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+body main .main-body .login .WalletConnect {
+  padding: 0 24px;
+  z-index: 1;
+  position: relative;
+  top: 20%;
+  background-color: #06070b;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+body main .main-body .login .WalletConnect:hover {
+  box-shadow: 1px 1px 5px;
+}
+body main .main-body .login video {
+  height: inherit;
+  display: inherit;
+  position: absolute;
+}
+body main .main-body .logout {
+  display: none;
+  width: 310px;
+  height: 410px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://meta-data.syltare.com/5216/image.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 410px;
+  width: 310px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+body main .main-body .logout .WalletDisconnect {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 9px;
+  position: relative;
+  top: 80px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+body main .main-body .logout .WalletDisconnect:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 5px;
+}
+body main .random-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .random-board .incline-cards-img {
+  position: relative;
+  top: 40px;
+}
+body main .random-board .incline-cards-img img {
+  width: 180px;
+  margin: 0 -40px;
+  position: relative;
+  transition: 0.8s;
+}
+body main .random-board .incline-cards-img img:nth-child(1) {
+  transform: rotate(-10deg);
+  top: 50px;
+}
+body main .random-board .incline-cards-img img:nth-child(1):hover {
+  z-index: 2;
+  transform: scale(1.2);
+}
+body main .random-board .incline-cards-img img:nth-child(2) {
+  transform: rotate(-5deg);
+  top: 20px;
+}
+body main .random-board .incline-cards-img img:nth-child(2):hover {
+  z-index: 2;
+  transform: scale(1.2);
+}
+body main .random-board .incline-cards-img img:nth-child(3):hover {
+  z-index: 2;
+  transform: scale(1.2);
+}
+body main .random-board .incline-cards-img img:nth-child(4) {
+  transform: rotate(5deg);
+  top: 20px;
+}
+body main .random-board .incline-cards-img img:nth-child(4):hover {
+  z-index: 2;
+  transform: scale(1.2);
+}
+body main .random-board .incline-cards-img img:nth-child(5) {
+  transform: rotate(10deg);
+  top: 50px;
+}
+body main .random-board .incline-cards-img img:nth-child(5):hover {
+  z-index: 2;
+  transform: scale(1.2);
+}
+body main .random-board .cards-info {
+  background-color: white;
+  width: 100%;
+  padding: 60px;
+  border-radius: 10px;
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body main .random-board .cards-info .random-cards img {
+  width: 260px;
+}
+body main .random-board .cards-info .about-this-card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 48px;
+}
+body main .random-board .cards-info .about-this-card-info .box {
+  display: inline-block;
+  margin: 16px 0;
+}
+body main .random-board .cards-info .about-this-card-info .box :nth-child(1) {
+  font-size: 28px;
+  color: red;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 12px;
+}
+body main .random-board .cards-info .about-this-card-info .box :nth-child(2) {
+  font-size: 24px;
+}
+body main .random-board .cards-info .about-this-card-info .box .introduce {
+  font-size: 14px;
+}
+body main .random-board .cards-info .chat {
+  display: flex;
+  flex-direction: column;
+}
+body main .random-board .cards-info .chat :nth-child(1) {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

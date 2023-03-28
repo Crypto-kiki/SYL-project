@@ -1,8 +1,27 @@
+@mixin incline-cards-img-hover {
+  z-index: 2;
+  transform: scale(1.2);
+}
+
+@mixin cards-info {
+  margin: 20px 0;
+  &:nth-child(1) {
+    font-size: 32px;
+    color: red;
+    font-weight: bold;
+  }
+  &:nth-child(2) {
+    font-size: 24px;
+  }
+}
+
 body {
   box-sizing: border-box;
   background-color: #e4effa;
   color: #797979;
   margin: 48px 24px;
+  padding: 0 48px;
+  min-width: 1340px;
 
   header {
     display: flex;
@@ -110,6 +129,8 @@ body {
 
   main {
     margin: 48px 0;
+
+    // 실타래 인포
     .syl-info {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -126,6 +147,7 @@ body {
         padding: 8px 12px;
         border-radius: 12px;
         font-weight: bold;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 
         .info-cards-name {
           font-size: 12px;
@@ -135,6 +157,205 @@ body {
           color: black;
           .info-img {
             margin-left: 4px;
+          }
+        }
+      }
+    }
+
+    // 메인 이미지
+    .main-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 0;
+
+      .main-img {
+        color: black;
+        h2 {
+          font-size: 32px;
+          font-weight: bold;
+          span {
+            color: red;
+            font-weight: 600;
+            padding: 0 4px;
+          }
+        }
+
+        img {
+          margin: 0 0 36px -48px;
+        }
+        p {
+          color: #797979;
+          letter-spacing: 1px;
+          line-height: 2rem;
+        }
+      }
+
+      .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 410px;
+        width: 310px;
+        overflow: hidden;
+        border-radius: 8px;
+
+        .WalletConnect {
+          padding: 0 24px;
+          z-index: 1;
+          position: relative;
+          top: 20%;
+          background-color: #06070b;
+          border-radius: 5px;
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          line-height: 1.5rem;
+          &:hover {
+            box-shadow: 1px 1px 5px;
+          }
+        }
+        video {
+          height: inherit;
+          display: inherit;
+          position: absolute;
+        }
+      }
+
+      .logout {
+        display: none;
+        width: 310px;
+        height: 410px;
+        justify-content: center;
+        align-items: center;
+        background-image: url("https://meta-data.syltare.com/5216/image.png");
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 410px;
+        width: 310px;
+        overflow: hidden;
+        border-radius: 8px;
+
+        .WalletDisconnect {
+          display: inline-block;
+          padding: 12px 24px;
+          border-radius: 9px;
+          position: relative;
+          top: 80px;
+          border: none;
+          font-size: 14px;
+          font-weight: bold;
+          opacity: 0.8;
+          &:hover {
+            opacity: 1;
+            box-shadow: 1px 1px 5px;
+          }
+        }
+      }
+    }
+
+    .random-board {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .incline-cards-img {
+        position: relative;
+        top: 40px;
+
+        img {
+          width: 180px;
+          margin: 0 -40px;
+          position: relative;
+          transition: 0.8s;
+
+          &:nth-child(1) {
+            transform: rotate(-10deg);
+            top: 50px;
+            &:hover {
+              @include incline-cards-img-hover;
+            }
+          }
+          &:nth-child(2) {
+            transform: rotate(-5deg);
+            top: 20px;
+            &:hover {
+              @include incline-cards-img-hover;
+            }
+          }
+          &:nth-child(3) {
+            &:hover {
+              @include incline-cards-img-hover;
+            }
+          }
+          &:nth-child(4) {
+            transform: rotate(5deg);
+            top: 20px;
+            &:hover {
+              @include incline-cards-img-hover;
+            }
+          }
+          &:nth-child(5) {
+            transform: rotate(10deg);
+            top: 50px;
+            &:hover {
+              @include incline-cards-img-hover;
+            }
+          }
+        }
+      }
+      .cards-info {
+        background-color: white;
+        width: 100%;
+        padding: 60px;
+        border-radius: 10px;
+        z-index: 3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .random-cards {
+          img {
+            width: 260px;
+          }
+        }
+
+        .about-this-card-info {
+          display: flex;
+          flex-direction: column;
+          padding: 0 48px;
+
+          .box {
+            display: inline-block;
+            margin: 16px 0;
+
+            & :nth-child(1) {
+              font-size: 28px;
+              color: red;
+              font-weight: bold;
+              display: block;
+              margin-bottom: 12px;
+            }
+
+            & :nth-child(2) {
+              font-size: 24px;
+            }
+            .introduce {
+              font-size: 14px;
+            }
+          }
+        }
+        .chat {
+          display: flex;
+          flex-direction: column;
+
+          & :nth-child(1) {
+            font-size: 24px;
+            font-weight: bold;
           }
         }
       }

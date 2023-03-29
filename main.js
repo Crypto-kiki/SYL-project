@@ -33,7 +33,7 @@ function Generate() {
       SearchInput.value = data.name;
       introduce.innerText = data.description;
 
-      // data.attrivutes의 객체에서 value값 접근
+      // data.attrivutes의 객체에서 배열-> 객체 value값 접근
       Rarity.innerText = data.attributes[0].value;
       Attack.innerText = data.attributes[1].value;
       Hp.innerText = data.attributes[2].value;

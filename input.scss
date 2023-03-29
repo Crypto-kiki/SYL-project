@@ -196,7 +196,7 @@ body {
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 410px;
+        height: 420px;
         width: 310px;
         overflow: hidden;
         border-radius: 8px;
@@ -214,7 +214,7 @@ body {
           letter-spacing: 1px;
           line-height: 1.5rem;
           &:hover {
-            box-shadow: 1px 1px 5px;
+            box-shadow: 1px 1px 1px #06070b;
           }
         }
         video {
@@ -227,24 +227,21 @@ body {
       .logout {
         display: none;
         width: 310px;
-        height: 410px;
-        justify-content: center;
-        align-items: center;
+        height: 414px;
         background-image: url("https://meta-data.syltare.com/5216/image.png");
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
-        height: 410px;
-        width: 310px;
         overflow: hidden;
         border-radius: 8px;
 
         .WalletDisconnect {
-          display: inline-block;
+          display: flex;
+          margin: 85% auto;
+          justify-content: center;
+          align-items: center;
           padding: 12px 24px;
           border-radius: 9px;
-          position: relative;
-          top: 80px;
           border: none;
           font-size: 14px;
           font-weight: bold;
@@ -330,11 +327,23 @@ body {
           display: flex;
           flex-direction: column;
           padding: 0 48px;
-          min-height: 550px;
+          height: 550px;
+
+          .generate {
+            position: relative;
+            width: 120px;
+            padding: 10px 24px;
+            border-radius: 5px;
+            border: none;
+            background-color: #797979;
+            color: white;
+            font-weight: bold;
+            box-shadow: 1px 1px 5px #797979;
+          }
 
           .box {
             display: inline-block;
-            margin-top: 24px;
+            margin-top: 12px;
 
             & :nth-child(1) {
               font-size: 18px;
@@ -358,14 +367,46 @@ body {
             }
           }
         }
-        .chat {
-          display: flex;
-          flex-direction: column;
-          min-width: 210px;
+        .Search {
+          // flex-basis: 410px;
+          display: block;
+          width: 310px;
+          min-width: 310px;
+          height: 550px;
+          overflow: scroll;
 
-          & :nth-child(1) {
+          .SearchAsk {
             font-size: 24px;
             font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .SearchForm {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+
+            .SearchInput {
+              padding: 6px 12px;
+              width: 50%;
+              border-radius: 5px;
+            }
+            .SearchButton {
+              width: 30%;
+              padding: 6px 12px;
+              border-radius: 5px;
+              border: none;
+              background-color: #797979;
+              color: white;
+              font-weight: bold;
+              box-shadow: 1px 1px 5px #797979;
+            }
+          }
+
+          .SearchResult {
+            width: 210px;
+            font-size: 12px;
           }
         }
       }

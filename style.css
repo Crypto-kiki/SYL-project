@@ -161,7 +161,7 @@ body main .main-body .login {
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 410px;
+  height: 420px;
   width: 310px;
   overflow: hidden;
   border-radius: 8px;
@@ -180,7 +180,7 @@ body main .main-body .login .WalletConnect {
   line-height: 1.5rem;
 }
 body main .main-body .login .WalletConnect:hover {
-  box-shadow: 1px 1px 5px;
+  box-shadow: 1px 1px 1px #06070b;
 }
 body main .main-body .login video {
   height: inherit;
@@ -190,24 +190,21 @@ body main .main-body .login video {
 body main .main-body .logout {
   display: none;
   width: 310px;
-  height: 410px;
-  justify-content: center;
-  align-items: center;
+  height: 414px;
   background-image: url("https://meta-data.syltare.com/5216/image.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 410px;
-  width: 310px;
   overflow: hidden;
   border-radius: 8px;
 }
 body main .main-body .logout .WalletDisconnect {
-  display: inline-block;
+  display: flex;
+  margin: 85% auto;
+  justify-content: center;
+  align-items: center;
   padding: 12px 24px;
   border-radius: 9px;
-  position: relative;
-  top: 80px;
   border: none;
   font-size: 14px;
   font-weight: bold;
@@ -290,11 +287,22 @@ body main .random-board .cards-info .about-this-card-info {
   display: flex;
   flex-direction: column;
   padding: 0 48px;
-  min-height: 550px;
+  height: 550px;
+}
+body main .random-board .cards-info .about-this-card-info .generate {
+  position: relative;
+  width: 120px;
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: #797979;
+  color: white;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px #797979;
 }
 body main .random-board .cards-info .about-this-card-info .box {
   display: inline-block;
-  margin-top: 24px;
+  margin-top: 12px;
 }
 body main .random-board .cards-info .about-this-card-info .box :nth-child(1) {
   font-size: 18px;
@@ -313,14 +321,42 @@ body main .random-board .cards-info .about-this-card-info .box .introduce {
 body main .random-board .cards-info .about-this-card-info .box .CardName {
   font-size: 28px;
 }
-body main .random-board .cards-info .chat {
-  display: flex;
-  flex-direction: column;
-  min-width: 210px;
+body main .random-board .cards-info .Search {
+  display: block;
+  width: 310px;
+  min-width: 310px;
+  height: 550px;
+  overflow: scroll;
 }
-body main .random-board .cards-info .chat :nth-child(1) {
+body main .random-board .cards-info .Search .SearchAsk {
   font-size: 24px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+body main .random-board .cards-info .Search .SearchForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+body main .random-board .cards-info .Search .SearchForm .SearchInput {
+  padding: 6px 12px;
+  width: 50%;
+  border-radius: 5px;
+}
+body main .random-board .cards-info .Search .SearchForm .SearchButton {
+  width: 30%;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #797979;
+  color: white;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px #797979;
+}
+body main .random-board .cards-info .Search .SearchResult {
+  width: 210px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -122,7 +122,9 @@
         </div>
         <div>
           <div class="login">
-            <button class="WalletConnect">Wallet<br />Connect</button>
+            <button class="WalletConnect" onclick="onClickToggle(true)">
+              Wallet<br />Connect
+            </button>
             <video
               src="https://metadata.syltare.com/mint/SYL-D_CARD.mp4"
               muted
@@ -131,7 +133,9 @@
             ></video>
           </div>
           <div class="logout">
-            <button class="WalletDisconnect">Disconnect</button>
+            <button class="WalletDisconnect" onclick="onClickToggle(false)">
+              Disconnect
+            </button>
           </div>
         </div>
       </div>
@@ -201,13 +205,20 @@
               <span class="Element">Fire</span>
             </div>
           </div>
-          <div class="chat">
-            <span>캐릭터의 스토리를 검색해보세요.</span>
-            <span>sdlfjsldfjslkfjsldkfj</span>
+          <div class="Search">
+            <div class="SearchAsk">캐릭터의 스토리를 검색해보세요!</div>
+            <div class="SearchForm">
+              <input class="SearchInput" type="text" value="입력하세요." />
+              <button class="SearchButton" onclick="onClickSearch()">
+                검 색
+              </button>
+            </div>
+            <div class="SearchResult">Search Result</div>
           </div>
         </div>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

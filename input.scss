@@ -319,8 +319,10 @@ body {
         align-items: center;
 
         .random-cards {
-          img {
+          box-shadow: 1px 1px 12px skyblue;
+          .card {
             width: 260px;
+            min-height: 550px;
           }
         }
 
@@ -328,30 +330,37 @@ body {
           display: flex;
           flex-direction: column;
           padding: 0 48px;
+          min-height: 550px;
 
           .box {
             display: inline-block;
-            margin: 16px 0;
+            margin-top: 24px;
 
             & :nth-child(1) {
-              font-size: 28px;
+              font-size: 18px;
               color: red;
               font-weight: bold;
               display: block;
-              margin-bottom: 12px;
+              margin-bottom: 6px;
             }
 
             & :nth-child(2) {
-              font-size: 24px;
+              font-size: 16px;
             }
             .introduce {
               font-size: 14px;
+              font-style: italic;
+            }
+
+            .CardName {
+              font-size: 28px;
             }
           }
         }
         .chat {
           display: flex;
           flex-direction: column;
+          min-width: 210px;
 
           & :nth-child(1) {
             font-size: 24px;

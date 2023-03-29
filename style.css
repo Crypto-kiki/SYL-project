@@ -279,34 +279,44 @@ body main .random-board .cards-info {
   justify-content: space-around;
   align-items: center;
 }
-body main .random-board .cards-info .random-cards img {
+body main .random-board .cards-info .random-cards {
+  box-shadow: 1px 1px 12px skyblue;
+}
+body main .random-board .cards-info .random-cards .card {
   width: 260px;
+  min-height: 550px;
 }
 body main .random-board .cards-info .about-this-card-info {
   display: flex;
   flex-direction: column;
   padding: 0 48px;
+  min-height: 550px;
 }
 body main .random-board .cards-info .about-this-card-info .box {
   display: inline-block;
-  margin: 16px 0;
+  margin-top: 24px;
 }
 body main .random-board .cards-info .about-this-card-info .box :nth-child(1) {
-  font-size: 28px;
+  font-size: 18px;
   color: red;
   font-weight: bold;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 6px;
 }
 body main .random-board .cards-info .about-this-card-info .box :nth-child(2) {
-  font-size: 24px;
+  font-size: 16px;
 }
 body main .random-board .cards-info .about-this-card-info .box .introduce {
   font-size: 14px;
+  font-style: italic;
+}
+body main .random-board .cards-info .about-this-card-info .box .CardName {
+  font-size: 28px;
 }
 body main .random-board .cards-info .chat {
   display: flex;
   flex-direction: column;
+  min-width: 210px;
 }
 body main .random-board .cards-info .chat :nth-child(1) {
   font-size: 24px;
